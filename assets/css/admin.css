@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Main
+   ========================================================================== */
+body{
+	background-color: #eeeeee;
+	font-family: Roboto;
+}
+
+#panel-body{
+	width: 800px;
+	left: 50%;
+	margin: 0 0 0 -400px;
+	top: 10px;
+	position: absolute;
+}
+
+/* ==========================================================================
+   Boxes
+   ========================================================================== */
+   
+#login-box{
+	position: absolute;
+	width: 400px;
+	height: 170px;
+	left: 50%;
+	margin: 0 0 0 -200px;
+	top: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #efefef;
+	overflow: hidden;
+	z-index: 2;
+}
+
+
+#help-box{
+	position: absolute;
+	width: 390px;
+	text-align: center;
+	left: 50%;
+	margin: 0 0 0 -200px;
+	top: 20%;
+	padding: 5px;
+	font-weight: 300;
+	height: 65px;
+	background-color: #efefef;
+}
+
+
+
+#logout-box{
+	color: #fff;
+	padding: 20px;
+	font-size: 30px;
+	background-color: #d83636;
+	width: auto;
+	display: inline-block;
+}
+
+#update-box{
+	color: #fff;
+	padding: 21px;
+	position: relative;
+	cursor: pointer;
+	font-size: 30px;
+	background-color: #21b248;
+	width: auto;
+	display: inline-block;
+	border: 0;
+}
+
+#function-box{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+#staff-conf-box{
+	width: 31%;
+	display: inline-block;
+	height: 300px;
+	padding: 5px;
+}
+
+
+/* ==========================================================================
+   Misc
+   ========================================================================== */
+
+  
+  
+   
+#passwd {
+    width: 80%;
+	margin: 15px 0 0 0;
+	left: 10%;
+	position: relative;
+	font: normal 300 20px/1 "Calibri", sans-serif;
+    color: #2b2d30;
+	padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+#passwd:focus{
+	border-bottom: solid 2px #969696;
+}
+
+
+.input-text {
+	font-family: Open Sans;
+    padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.input-text:focus{
+	border-bottom: solid 2px #969696;
+}
+
+.input-text.rule{
+	padding: 10px;
+}
+
+#submit{
+	margin: 15px 0 0 0;
+	background: #4582ec;
+	border-radius: 5px;
+	border-width: 0;
+	width: 70%;
+	color: #ffffff;
+	display: inline-block;
+	padding: 8px 20px;
+	font: normal 700 24px/1 "Calibri", sans-serif;
+	text-align: center;
+	text-shadow: 0px 0px 0 #000;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background: #1863e6;
+	cursor: pointer;
+}
+
+hr{
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background: #4582ec;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1863e6;
+  text-decoration: none;
+}
+
+.btnr {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  background: #229430;
+  padding: 4px 5px 5px 5px;
+  text-decoration: none;
+}
+
+.btnr:hover {
+  background: #146b20;
+  text-decoration: none;
+}
+
+
+textarea {
+    resize: none;
+	font-family: Open Sans;
+    padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+textarea:focus{
+	border-bottom: solid 2px #969696;
+}
+
+
+#ck-button {
+    margin:4px;
+	color:#fff;
+    background-color:#9b2e2e;
+    border-radius:0px;
+	cursor:pointer;
+    overflow:auto;
+    float:left;
+	position: absolute;
+	margin-right: -64px;
+	margin-top: -41px;
+	border-radius: 0 5px 5px 0; 
+}
+
+#ck-button label {
+    float:left;
+    width:4.0em;
+	cursor:pointer;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:10.5px 0px;
+    display:block;
+	cursor:pointer;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+	cursor:pointer;
+}
+
+#ck-button input:checked + span {
+    background-color:#229430;
+    color:#fff;
+	cursor:pointer;
+}
